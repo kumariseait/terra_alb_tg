@@ -6,7 +6,7 @@ pipeline {
     stages{
         stage('Git Checkout'){
             steps{
-                git branch: 'main', credentialsId: 'Git_Cred', url: 'https://github.com/kumariseait/terra_webserver.git'
+                git branch: 'main', credentialsId: 'Git_Cred', url: 'https://github.com/kumariseait/terra_alb_tg.git'
             }
         }
         stage('Terraform Initilization'){
